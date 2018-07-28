@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/downloadMenu"
+        android:title="Download"/>
+
+    <item
+        android:id="@+id/readOnlineMenu"
+        android:title="Read Online"/>
+
+    <item
+        android:id="@+id/detailsMenu"
+        android:title="Details"/>
+
+    <item
+        android:id="@+id/ratingMenu"
+        android:title="Rate Book"/>
+
+</menu>

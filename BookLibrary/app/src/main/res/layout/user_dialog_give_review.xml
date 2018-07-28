@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+       <!-- <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aladin"
+            android:text="Give Your Review"
+            android:textSize="24sp"
+            android:textStyle="bold" /> -->
+
+        <RatingBar
+            android:id="@+id/rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:numStars="5"
+            android:rating="5"
+            android:stepSize="0.1" />
+
+        <EditText
+            android:id="@+id/descriptionBox"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/issueBox"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/editbox1"
+            android:gravity="left"
+            android:hint="Review Description"
+            android:inputType="textMultiLine"
+            android:maxLines="8"
+            android:paddingLeft="10dp">
+
+        </EditText>
+
+        <!--<ImageView
+            android:id="@+id/sendReview"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/arrow" /> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="right">
+
+            <Button
+                android:id="@+id/cancelReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/sendReview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@null"
+                android:text="Submit"
+                android:textColor="@color/colorPrimaryDark"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/ic_launcher" />
+
+</FrameLayout>
